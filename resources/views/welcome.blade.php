@@ -92,7 +92,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
-                    <h2>e-signature functionality demo</h2>
+                    <h2>E-signature functionality</h2>
                     <div class="flash-message">
                         @foreach (['danger', 'warning', 'success', 'info'] as $msg)
                         @if(Session::has('alert-' . $msg))

@@ -23,11 +23,11 @@
                     </div>
                     <div style="max-width: 600px">
                     @if (!empty($listImages))
-                        <p>e-signature Registered</p>
+                        <p>E-signature registered</p>
                     @else
                     	<p>You haven't registered a signature yet</p>
                     @endif
-                        
+
                         @foreach ($listImages as $image)
                         <img src="{{ $image->url }}" alt=""  style="border: 1px solid black; margin: 5px;">
                         @endforeach
