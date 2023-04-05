@@ -41,7 +41,7 @@ class HomeController extends Controller
         $imageName = uniqid() . '.png';
 
         Storage::disk('public')->put("images/" . $imageName,base64_decode($image));
-        $data['url'] = str_replace('public', 'storage/app/public/images/', URL::to('/')) . $imageName;
+        $data['url'] = URL::to('/') . "/storage/images/" . $imageName;
         $data['user_id'] = Auth::id();
         $data['host'] = URL::to('/');
         $data['path'] = "/storage/images/";
